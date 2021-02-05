@@ -13,5 +13,15 @@
   
     display: grid;
     align-items: center;
+
+    height: 200px;
+    background-color: red;
   }
   
+
+  .innerHeader{
+
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+  }

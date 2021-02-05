@@ -163,3 +163,53 @@ button {
 button:hover {
     cursor: pointer;
 }
+
+._layout {
+    display: grid;
+    gap: var(--layout-gap);
+
+}
+
+._container {
+
+    width: 95%;
+
+    margin: auto;
+
+    min-width: 19rem;     /*--- 320px or the width of the smallest device - a margin of safety = 304---*/
+
+    max-width: 120rem; /*-- 1920px or the width ----*/
+}
+
+
+/*-----Media Queries------*/
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media all and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media all and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media all and (min-width: 992px) {
+
+    ._container {
+        width: 80%;
+    }
+    ._fullwidth_on_desktop{
+        width: 100%;
+    }
+
+    /* #_main {
+        margin-top: var(--header-height);
+    }
+     */
+    
+    
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media all and (min-width: 1200px) {}
