@@ -1,0 +1,17 @@
+.header {
+
+
+    min-width: 100%;
+    height: var(--header-height);
+  
+    transform: translate3d(0px, 0px, 0px);
+  
+    -webkit-backdrop-filter: var(--backdrop-filter);
+    backdrop-filter: var(--backdrop-filter);
+  
+    background-color: hsl(0deg 0% 6% / 48%);
+  
+    display: grid;
+    align-items: center;
+  }
+  
