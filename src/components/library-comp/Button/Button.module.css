@@ -1,6 +1,4 @@
-.Button{
-
-    padding: var(--padding);;
+.Button {    
     font-size: 1rem;
 
     border: 1px solid transparent;
@@ -14,17 +12,22 @@
 
     box-sizing: border-box;
 
+    box-shadow: 5px 15px 40px rgba(0, 201, 224, 0.2);
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+
+
 }
 
 /*----Interactions----*/
 
-.Button:hover{
+.Button:hover {
 
     cursor: pointer;
 
 }
 
-.Button[disabled]{
+.Button[disabled] {
 
     cursor: not-allowed;
     pointer-events: none;
@@ -32,39 +35,41 @@
 
 }
 
-.iconButton{
+.iconButton {
 
     display: grid;
     align-items: center;
     border-radius: 50%;
-    fill:white;
+    fill: white;
 }
+
 /*---------Types--------*/
 
 /*--Primary--*/
 
-.primary{ 
+.primary {
 
     background: var(--primary-color);
     color: white;
 
 }
 
-.primary:hover{ 
+.primary:hover {
 
     background: var(--primary-darker-color);
-    
-}
-.primary[disabled]{ 
 
-    background-color: rgb(186 186 186 / 39%); 
+}
+
+.primary[disabled] {
+
+    background-color: rgb(186 186 186 / 39%);
     color: #9a9a9aa1;
     fill: #9a9a9aa1;
 }
 
 /*--Secondary--*/
 
-.secondary{ 
+.secondary {
 
     background: transparent;
     color: var(--primary-color);
@@ -73,13 +78,13 @@
 
 }
 
-.secondary:hover{ 
+.secondary:hover {
 
     background: var(--primary-darker-color);
-    
+
 }
 
-.secondary[disabled]{
+.secondary[disabled] {
 
     border-color: #9a9a9aa1;
     color: #9a9a9aa1;
@@ -92,15 +97,15 @@
 
 /*--Link--*/
 
-.link{ 
+.link {
 
     background: transparent;
     color: var(--primary-color);
 
 }
 
-.link:hover{ 
+.link:hover {
 
     background: rgba(172, 172, 172, 0.24);
-    
+
 }
