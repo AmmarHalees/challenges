@@ -1,0 +1,106 @@
+.Button{
+
+    padding: var(--padding);;
+    font-size: 1rem;
+
+    border: 1px solid transparent;
+    background: none;
+
+    transition: all var(--speed) linear;
+    border-radius: 1rem;
+
+    width: fit-content;
+    height: fit-content;
+
+    box-sizing: border-box;
+
+}
+
+/*----Interactions----*/
+
+.Button:hover{
+
+    cursor: pointer;
+
+}
+
+.Button[disabled]{
+
+    cursor: not-allowed;
+    pointer-events: none;
+    box-shadow: none;
+
+}
+
+.iconButton{
+
+    display: grid;
+    align-items: center;
+    border-radius: 50%;
+    fill:white;
+}
+/*---------Types--------*/
+
+/*--Primary--*/
+
+.primary{ 
+
+    background: var(--primary-color);
+    color: white;
+
+}
+
+.primary:hover{ 
+
+    background: var(--primary-darker-color);
+    
+}
+.primary[disabled]{ 
+
+    background-color: rgb(186 186 186 / 39%); 
+    color: #9a9a9aa1;
+    fill: #9a9a9aa1;
+}
+
+/*--Secondary--*/
+
+.secondary{ 
+
+    background: transparent;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    fill: white;
+
+}
+
+.secondary:hover{ 
+
+    background: var(--primary-darker-color);
+    
+}
+
+.secondary[disabled]{
+
+    border-color: #9a9a9aa1;
+    color: #9a9a9aa1;
+    fill: #9a9a9aa1;
+
+    background: none;
+}
+
+
+
+/*--Link--*/
+
+.link{ 
+
+    background: transparent;
+    color: var(--primary-color);
+
+}
+
+.link:hover{ 
+
+    background: rgba(172, 172, 172, 0.24);
+    
+}
