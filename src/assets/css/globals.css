@@ -1,3 +1,15 @@
+/*-----Font------*/
+
+@font-face {
+    font-family: 'Noe-display';
+    src:  url('../fonts/noe-display-regular.ttf') format('woff2')  }
+
+    @font-face {
+        font-family: 'Larsseit-Medium';
+        src:  url('../fonts/Larsseit-Medium.ttf') format('woff2')  }
+    
+    
+    
 
 /*-----Variables------*/
 
@@ -5,7 +17,7 @@
 
 
     --primary-color: #00C9E0;    ;
-    --accent-color: #ef62a1; /*older one #ef62d9*/
+    --accent-color: #41EAD4;
 
     --primary-darker-color: #3b008f; /* Used for hover efect on primary items */
     --primary-lighter-color: #dcc3ff3d; /* Used for hover efect on secondary items */
@@ -18,16 +30,16 @@
     --error-color:  #8a0000;
     --success-color:  #018a00;
 
-    /*--Text Colrs */
 
-    --text-color-20 : #c5c5c5;
-    --text-color-10 : #b1b1b1;
 
     /*--Background colors--*/
 
     --dark-bg : #101010;
     --bg-overlay-color: rgb(0 0 0 / 88%);    
     
+    --font-family: 'Larsseit-Medium';
+
+
     /*-- Box shadows--*/
 
     --box-shadow: rgb(235, 235, 235) -1px 1px 13px 0px;
@@ -68,7 +80,7 @@
 
     --below-overlay-z:1;
 
-    --overlay-z: 2;
+    --overlay-z: 1;
 
     --non-overlapping-z:3; /*- free roaming-*/
 
@@ -137,7 +149,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: var(--text-color-20);
+    color: #fff;
     word-break: break-word;
 }
 
@@ -148,7 +160,7 @@ h1{
 
 p,
 span {
-    color: var(--text-color-10);
+    color: #fff;
 }
 
 li,

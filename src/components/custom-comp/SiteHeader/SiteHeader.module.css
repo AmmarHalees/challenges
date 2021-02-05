@@ -4,12 +4,14 @@
   align-items: center;
   height: var(--header-height);
   background: none;
-  }
-  
+  z-index: 1;
+  position: relative;
+}
 
-  .innerHeader{
 
-    display: grid;
-    align-items: center;
-    grid-template-columns: 1fr 1fr;
-  }
+.innerHeader {
+
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+}

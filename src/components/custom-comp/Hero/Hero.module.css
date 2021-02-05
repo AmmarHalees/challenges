@@ -2,17 +2,15 @@
 
     display: grid;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
 
     background: green;
     height: 100vh;
     position: relative;
-    top: 0pc;
     top: calc(0rem - var(--header-height));
-    z-index: -1;
     width: 100%;
 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../../assets//images/hero.png");
+    background-image:  url("../../../assets//images/hero.png");
 
     background-position: center;
     background-repeat: no-repeat;
@@ -20,9 +18,73 @@
     position: relative;
 }
 
-.innerHero{
+.Hero .innerHero{
 
     text-align: center;
-    
-    
+    max-width: 600px;
+
+}
+
+
+.Hero h1{
+
+    font-size: 120px;
+    font-weight: normal;
+    font-family: 'Noe-display';
+}
+
+.Hero h2{
+    font-size: 18px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+.Actions{
+
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    z-index: 2;
+
+}
+
+.SocialIcons{
+
+    justify-content: end;
+}
+
+.SocialIcons a{
+
+    width: fit-content;
+}
+
+.SocialIcons a svg{
+
+    width: 20px;
+}
+
+.scrollButton{
+    width: fit-content;
+    display: grid;
+    gap: 2rem;
+    background: none;
+}
+
+
+.Line{
+
+    height: 80px;
+    background: var(--primary-color);
+    width: 2px;
+    text-align: center;
+    margin: auto;
+}
+
+.scrollText{
+
+    -ms-transform: rotate(270deg); /* IE 9 */
+  transform: rotate(270deg);
+  font-weight: bold;
+    letter-spacing: 1px;
 }
