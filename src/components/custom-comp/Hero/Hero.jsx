@@ -6,7 +6,21 @@ import { ReactComponent as IGLogo } from '../../../assets/icons/instagram.svg';
 import Overlay from '../../library-comp/Overlay/Overlay';
 
 
-const Hero = () => {
+const Hero = ({gallerySectionRef}) => {
+    
+        
+
+    function handleScrollDown(){
+
+        gallerySectionRef.current.scrollIntoView({
+
+            behavior: 'smooth'
+
+        });
+
+    }
+
+
     return (<section className={styles.Hero}>
 
         <div className={`${styles.innerHero} _layout _container`}>
@@ -18,7 +32,7 @@ const Hero = () => {
         <div className={`${styles.Actions} _container`}>
 
 
-            <button className={styles.scrollButton}>
+            <button className={styles.scrollButton} onClick={handleScrollDown}>
 
                 <p className={styles.scrollText}>scroll</p>
                 <div className={styles.Line}></div>
