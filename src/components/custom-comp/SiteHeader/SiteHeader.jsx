@@ -4,14 +4,14 @@ import { ReactComponent as SiteLogo } from '../../../assets/logo/brand-logo.svg'
 import HeaderActions from './components/HeaderActions';
 
 
-const SiteHeader = () => {
+const SiteHeader = ({handleMenu}) => {
     return (<header className={styles.header}>
 
         <div className={`${styles.innerHeader} _container`}>
 
             <SiteLogo />
 
-            <HeaderActions />
+            <HeaderActions handleMenu={handleMenu} />
         </div>
 
 
