@@ -32,7 +32,7 @@ const Hero = ({gallerySectionRef}) => {
         <div className={`${styles.Actions} _container`}>
 
 
-            <button className={styles.scrollButton} onClick={handleScrollDown}>
+            <button title="scroll down" className={styles.scrollButton} onClick={handleScrollDown}>
 
                 <p className={styles.scrollText}>scroll</p>
                 <div className={styles.Line}></div>
@@ -41,9 +41,9 @@ const Hero = ({gallerySectionRef}) => {
 
             <div className={`${styles.SocialIcons} _layout`}>
 
-                <a href="facebook.com"><FacebookLogo /></a>
-                <a href="twitter.com"><TwitterLogo /></a>
-                <a href="instagram.com"><IGLogo /></a>
+                <a title="facebook page" href="facebook.com"><FacebookLogo /></a>
+                <a title="twitter profile" href="twitter.com"><TwitterLogo /></a>
+                <a title="instagram profile" href="instagram.com"><IGLogo /></a>
 
             </div>
 
