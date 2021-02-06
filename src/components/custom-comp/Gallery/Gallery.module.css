@@ -1,0 +1,55 @@
+.Gallery {
+
+    height: 100vh;
+    position: relative;
+}
+
+.Gallery h2 {
+
+    font-size: 30px;
+    font-family: 'Noe-display';
+
+}
+
+.header {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 1rem;
+
+
+}
+
+.innerGallery {
+    margin: auto;
+
+    max-width: 1080px;
+
+    display: grid;
+    gap: 2rem;
+}
+
+
+@media all and (min-width: 768px) {
+
+    .Gallery h2 {
+
+        font-size: 72px;
+
+    }
+
+    .header {
+
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 2rem;
+
+
+    }
+
+    .innerGallery {
+        gap: 4rem;
+    }
+
+}

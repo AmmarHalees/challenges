@@ -1,0 +1,251 @@
+.container {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 2rem;
+    height: 600px;
+    position: relative;
+
+
+}
+
+.right {
+
+    display: grid;
+    gap: 2rem;
+}
+
+.right h3 {
+
+    font-size: 45px;
+}
+
+.left h4 {
+
+    font-size: 16px;
+}
+
+.left {
+    justify-self: center;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.left .mainimage {
+
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    margin: auto;
+    border-radius: 8px;
+}
+
+.floating {
+    position: absolute;
+    left: 10px;
+    position: absolute;
+    border: 0px;
+    top: 200px;
+    text-align: left;
+    font-size: 24px;
+    width: 200px;
+    font-weight: lighter;
+}
+
+.line {
+
+    border-left: 1px solid var(--primary-color);
+    border-top: 1px solid var(--primary-color);
+    width: 83px;
+    height: 10px;
+}
+
+
+
+.lineRight {
+    border-right: 1px solid var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
+    width: 100%;
+    height: 10px;
+    display: none;
+}
+
+
+.number {
+
+    margin-bottom: 1rem;
+}
+
+.arrowControls {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+    background: #011627;
+    border-radius: 8px;
+}
+
+.arrowControls button {
+
+    padding: 1rem;
+
+}
+
+.arrowControls button:first-child {
+
+    border-radius: 8px 0rem 0rem;
+    border-right: 1px solid #133149;
+
+}
+
+
+.arrowControls button:nth-child(2) {
+
+    border-radius: 0rem 0rem 8px 0rem;
+
+}
+
+.arrowControls button[disabled] {
+
+    cursor: not-allowed;
+    pointer-events: none;
+    box-shadow: none;
+
+    opacity: 0.3;
+
+}
+
+
+.SocialIcons {
+
+    justify-content: space-around;
+    grid-template-columns: auto auto auto;
+}
+
+.SocialIconsCotainer {
+    position: initial;
+    bottom: 0px;
+    right: -60px;
+    display: grid;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.SocialIconsCotainer p{
+
+    display: none;
+}
+
+
+.SocialIcons a {
+
+    width: fit-content;
+}
+
+.SocialIcons a svg {
+
+    width: 20px;
+}
+
+.dots {
+
+    position: absolute;
+    left: -52px;
+    bottom: -45px;
+    width: 200px;
+    height: 200px;
+    z-index: -1;
+    display: none;
+
+}
+
+
+
+@media all and (min-width: 768px) {
+
+    .container {
+
+        grid-template-columns: 1fr 1fr;
+        margin-top: 119px;
+        gap: 4rem;
+
+    }
+
+    .left .mainimage {
+
+        height: 600px;
+
+    }
+
+    .dots {
+
+        display: initial;
+    }
+
+    .floating {
+
+        position: absolute;
+        left: -93px;
+
+    }
+
+    .right h3 {
+
+        font-size: 65px;
+    }
+
+    .left h4 {
+
+        font-size: inherit;
+    }
+
+    .SocialIconsCotainer {
+        position: absolute;
+
+    }
+
+    .line {
+
+        width: 200px;
+        transform: initial;
+
+    }
+
+    .right {
+
+        gap: 3rem;
+    }
+
+    .arrowControls {
+
+
+        bottom: 5px;
+        right: -1px;
+        border-radius: 8px 0px 8px 0px;
+
+    }
+
+    .lineRight {
+
+        display: initial;
+    }
+
+    .SocialIconsCotainer {
+        grid-template-columns: initial;
+    }
+    .SocialIcons {
+
+        justify-content: end;
+    }
+    .SocialIconsCotainer p{
+
+        display: initial;
+    }
+    
+    
+}

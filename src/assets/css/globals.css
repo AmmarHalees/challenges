@@ -1,0 +1,233 @@
+/*-----Font------*/
+
+@font-face {
+    font-family: 'Noe-display';
+    src:  url('../fonts/noe-display-regular.ttf') format('woff2')  }
+
+    @font-face {
+        font-family: 'Larsseit-Medium';
+        src:  url('../fonts/Larsseit-Medium.ttf') format('woff2')  }
+    
+    
+    
+
+/*-----Variables------*/
+
+:root {
+
+
+    --primary-color: #00C9E0;    ;
+    --accent-color: #41EAD4;
+
+    --primary-darker-color: #3b008f; /* Used for hover efect on primary items */
+    --primary-lighter-color: #dcc3ff3d; /* Used for hover efect on secondary items */
+
+    --bg-transparent-grey: hsl(0deg 0% 47% / 10%); /*Used as background when hovering over items (notice how we made it light by increasing transparency, so it would apply for dark and light theme) */ 
+    --border-color:  hsl(0 0% 50% / 0.5); /* For border color */
+
+    /*--Feedback Colors */
+
+    --error-color:  #8a0000;
+    --success-color:  #018a00;
+
+
+
+    /*--Background colors--*/
+
+    --dark-bg : #101010;
+    --bg-overlay-color: rgb(0 0 0 / 88%);    
+    
+    --font-family: 'Larsseit-Medium';
+
+
+    /*-- Box shadows--*/
+
+    --box-shadow: rgb(235, 235, 235) -1px 1px 13px 0px;
+
+    /*-- Filter --*/
+
+    --backdrop-filter: saturate(180%) blur(20px);
+
+    /*-- Borders --*/
+
+    --border: 1px solid var(--primary-color);
+    --border-radius: 10px;
+    --border-radius-x2: 20px;
+
+    /*-- Padding and Margin --*/
+
+    --padding: 1rem;
+
+    /*-- Speed --*/
+
+    --speed: 300ms;
+
+    /*-- Gap layout and elements --*/
+
+    --app-gap: 1rem;
+    --layout-gap: 2rem;
+
+    /*-- Heights --*/
+
+    --header-height: 10rem;
+    --footer-height: 4rem;
+    --button-height: 55px;
+
+    
+    /*------Z -index ------*/
+
+    --lowest-z:0;
+
+    --below-overlay-z:1;
+
+    --overlay-z: 1;
+
+    --non-overlapping-z:3; /*- free roaming-*/
+
+    --tool-tip: 4;
+
+    --header: 6;
+
+    --modal: 8;
+
+    --notif-msg-toast: 10;
+
+}
+
+/*-----Generic------*/
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+    font-family: var(--font-family, sans-serif, Arial, Helvetica);
+    height: 100vh;
+    /* scroll-behavior: smooth; */
+    color: white;
+}
+
+body{
+
+    background: #011627;
+}
+
+
+body,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button {
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--font-family, sans-serif, Arial, Helvetica);
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+
+    color: var(--accent-color);
+}
+
+a:hover {
+
+    color: var(--primary-color);
+}
+
+button{
+    background: none;
+    color: white;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #fff;
+    word-break: break-word;
+}
+
+h1{
+
+    font-size: 4rem;
+}
+
+p,
+span {
+    color: #fff;
+}
+
+li,
+ol{
+    list-style: none;
+}
+
+button {
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+._layout {
+    display: grid;
+    gap: var(--layout-gap);
+
+}
+
+._container {
+
+    width: 95%;
+
+    margin: auto;
+
+    min-width: 19rem;     /*--- 320px or the width of the smallest device - a margin of safety = 304---*/
+
+    max-width: 120rem; /*-- 1920px or the width ----*/
+}
+
+
+/*-----Media Queries------*/
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media all and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media all and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media all and (min-width: 992px) {
+
+    ._container {
+        width: 70%;
+    }
+    ._fullwidth_on_desktop{
+        width: 100%;
+    }
+
+    /* #_main {
+        margin-top: var(--header-height);
+    }
+     */
+    
+    
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media all and (min-width: 1200px) {}

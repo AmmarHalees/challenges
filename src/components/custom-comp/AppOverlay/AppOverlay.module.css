@@ -1,0 +1,19 @@
+.AppOverlay{
+
+    background: #BE41EA;
+opacity: 0.11;
+filter: blur(250px);
+
+
+
+position: absolute;
+
+left: 0px;
+
+right: 0px;
+bottom: 0px;
+height: 300px;
+
+z-index: var(--overlay-z);
+
+}

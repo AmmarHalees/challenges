@@ -1,0 +1,25 @@
+.overlay{
+
+
+    position: absolute;
+
+    left: 0px;
+
+    right: 0px;
+    bottom: 0px;
+    height: 100px;
+
+    z-index: var(--overlay-z);
+
+    border-radius: inherit;
+}
+
+@media all and (min-width: 768px) {
+
+    .overlay{
+
+        height: 300px;
+
+    }
+    
+}

@@ -1,0 +1,9 @@
+.headerActions{
+
+
+    justify-self: end;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    gap: 1rem;
+}

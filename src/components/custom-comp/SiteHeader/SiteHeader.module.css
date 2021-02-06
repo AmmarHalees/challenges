@@ -1,0 +1,28 @@
+.header {
+  min-width: 100%;
+  display: grid;
+  align-items: center;
+  background: none;
+  z-index: 1;
+  position: relative;
+  height: calc(var(--header-height)/2);
+
+}
+
+
+.innerHeader {
+
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+
+@media all and (min-width: 768px) {
+  .header {
+
+  height: var(--header-height);
+
+  }
+}

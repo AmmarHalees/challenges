@@ -1,0 +1,50 @@
+.Tabs{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.tabitem{
+
+    border-bottom: 1px solid var(--primary-color);
+    background: none;
+    color: white;
+    padding: 0rem;
+    font-weight: lighter;
+    opacity: 0.5;
+    transition: all var(--speed) cubic-bezier(0.075, 0.82, 0.165, 1);
+    box-sizing: border-box;
+    height: 50px;
+}
+
+.selected{
+
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
+    font-size: 18px;
+    opacity: 1;
+}
+
+
+.tabsContainer{
+
+    max-width: 900px;
+    margin: auto;
+}
+
+
+
+@media all and (min-width: 768px) {
+
+
+    .tabitem{
+
+        padding: 2rem;
+        font-weight: bold;
+        height: 100px;
+
+    
+    }
+  }
+  
