@@ -51,7 +51,7 @@ function App() {
 
       <SiteFooter />
 
-      {/* <AppOverlay/> */}
+      <AppOverlay isOpen={isOpen}/>
 
     </div>
   );
