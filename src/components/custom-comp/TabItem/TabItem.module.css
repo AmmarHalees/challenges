@@ -6,6 +6,7 @@
     margin-top: 119px;
     gap: 4rem;
     height: 600px;
+    position: relative;
 }
 
 .right{
@@ -26,7 +27,7 @@
    position: relative;
 }
 
-.left img{
+.left .mainimage{
 
     height: 600px;
     width: 100%;
@@ -55,6 +56,14 @@
     height: 10px;
 
 }
+
+.lineRight{
+    border-right: 1px solid var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
+    width: 100%;
+    height: 10px;
+}
+
 
 .number{
 
@@ -99,4 +108,40 @@
 
     opacity: 0.3;
 
+}
+
+
+.SocialIcons{
+
+    justify-content: end;
+    grid-template-columns: auto auto auto;
+}
+
+.SocialIconsCotainer{
+    position: absolute;
+    bottom: 0px;
+    right: -60px;
+    display: grid;
+    gap: 0.5rem;
+}
+
+
+.SocialIcons a{
+
+    width: fit-content;
+}
+
+.SocialIcons a svg{
+
+    width: 20px;
+}
+
+.dots{
+
+    position: absolute;
+    left: -52px;
+    bottom: -45px;
+    width: 200px;
+    height: 200px;
+    z-index: -1;
 }
