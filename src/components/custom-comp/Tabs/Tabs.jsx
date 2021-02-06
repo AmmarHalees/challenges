@@ -43,7 +43,7 @@ const Tabs = ({ TabsData  }) => {
 
             {/* Tabs Body */}
 
-            <div>
+            <div className={styles.tabsContainer}>
 
                 <TabItem title={title} id={id} content={content} image_cap={image_cap} image_url={image_url} social_links={social_links} cta = {cta} />
 

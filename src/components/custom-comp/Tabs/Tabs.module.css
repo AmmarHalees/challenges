@@ -23,3 +23,10 @@
     font-size: 18px;
     opacity: 1;
 }
+
+
+.tabsContainer{
+
+    max-width: 900px;
+    margin: auto;
+}
