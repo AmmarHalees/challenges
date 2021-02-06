@@ -3,12 +3,15 @@ import { ReactComponent as SearchIcon } from '../../../../assets/icons/search.sv
 import Button from '../../../library-comp/Button/Button';
 import styles from './HeaderActions.module.css';
 
-const HeaderActions = () => {
+const HeaderActions = ({handleMenu}) => {
+
+    
+
     return (<div className={styles.headerActions}>
 
         <SearchIcon />
 
-        <Button type="primary" size="large" >MENU</Button>
+        <Button type="primary" size="large" onclick={handleMenu}>MENU</Button>
 
 
     </div>);
