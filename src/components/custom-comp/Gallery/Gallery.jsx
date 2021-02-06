@@ -1,7 +1,12 @@
 import React from 'react';
 import styles from './Gallery.module.css';
+import JSONdata from '../../../api/GalleryData.json';
+import TabItem from '../TabItem/TabItem';
+import Tabs from '../Tabs/Tabs';
 
-const Gallery = ({gallerySectionRef}) => {
+const Gallery = ({ gallerySectionRef }) => {
+
+
     return (<section ref={gallerySectionRef} className={`${styles.Gallery} _container`}>
 
 
@@ -22,7 +27,13 @@ const Gallery = ({gallerySectionRef}) => {
             </header>
 
 
-            
+            {/* {JSONdata.data.map(({id , title, content , cta , image_cap , image_url , social_links}) =>  <TabItem id={id}  title = {title}  content={content}  cta ={cta}  image_cap ={image_cap}  image_url ={image_url}  social_links={social_links} /> )} */}
+
+            {/* {JSONdata.data.map(({ id, title, content, cta, image_cap, image_url, social_links }) => <TabItem title={title} id={id} content={content} image_cap={image_cap} image_url={image_url} social_links={social_links} />)} */}
+
+
+            <Tabs TabsData={JSONdata.data}/>
+
 
 
         </div>

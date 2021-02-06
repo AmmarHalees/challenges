@@ -1,0 +1,25 @@
+.Tabs{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.tabitem{
+
+    border-bottom: 1px solid var(--primary-color);
+    background: none;
+    color: white;
+    padding: 2rem;
+    font-weight: bold;
+    opacity: 0.5;
+
+}
+
+.selected{
+
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
+    font-size: 18px;
+    opacity: 1;
+}

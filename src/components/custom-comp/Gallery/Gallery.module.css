@@ -1,29 +1,31 @@
-.Gallery{
+.Gallery {
 
     height: 100vh;
     position: relative;
 }
 
-.Gallery h2{
+.Gallery h2 {
 
     font-size: 72px;
     font-family: 'Noe-display';
 
 }
 
-.header{
+.header {
 
     display: grid;
     grid-template-columns: auto auto;
     align-items: center;
     gap: 2rem;
 
-    
+
 }
 
-.innerGallery{
+.innerGallery {
     margin: auto;
 
-        max-width: 1080px;
-    background: red;
+    max-width: 1080px;
+
+    display: grid;
+    gap: 4rem;
 }
