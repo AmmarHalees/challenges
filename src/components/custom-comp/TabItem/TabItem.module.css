@@ -90,6 +90,7 @@
 .arrowControls button:first-child{
 
     border-radius: 8px 0rem 0rem;
+    border-right: 1px solid #133149;
 
 }
 
