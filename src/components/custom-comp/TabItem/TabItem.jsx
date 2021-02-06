@@ -56,9 +56,9 @@ const TabItem = ({ id, title, content, cta, image_cap, image_url, social_links =
 
                     <div className={`${styles.SocialIcons} _layout`}>
 
-                        <a href={social_links.instagram}><IGLogo /></a>
-                        <a href={social_links.facebook}><FacebookLogo /></a>
-                        <a href={social_links.twitter}><TwitterLogo /></a>
+                    <a title="instagram profile" href={social_links.instagram}><IGLogo /></a>
+                    <a title="facebook profile"href={social_links.facebook}><FacebookLogo /></a>
+                    <a title="twitter profile" href={social_links.twitter}><TwitterLogo /></a>
 
                     </div>
 

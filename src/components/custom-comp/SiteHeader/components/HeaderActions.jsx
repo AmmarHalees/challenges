@@ -8,7 +8,7 @@ const HeaderActions = () => {
 
         <SearchIcon />
 
-        <Button type="primary" size="large" >Menu</Button>
+        <Button type="primary" size="large" >MENU</Button>
 
 
     </div>);
