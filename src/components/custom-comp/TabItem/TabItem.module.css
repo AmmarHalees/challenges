@@ -22,7 +22,7 @@
     font-size: 45px;
 }
 
-.left h4 {
+.left .image_cap {
 
     font-size: 16px;
 }
@@ -199,7 +199,7 @@
         font-size: 65px;
     }
 
-    .left h4 {
+    .left .image_cap {
 
         font-size: inherit;
     }

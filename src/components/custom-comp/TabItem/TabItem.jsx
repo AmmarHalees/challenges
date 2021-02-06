@@ -22,7 +22,7 @@ const TabItem = ({ id, title, content, cta, image_cap, image_url, social_links =
 
                     <div className={styles.line}></div>
                     <p className={styles.number}>{`0${id}.`}</p>
-                    <h4>{image_cap}</h4>
+                    <p className={styles.image_cap}>{image_cap}</p>
 
 
                 </div>
@@ -30,11 +30,11 @@ const TabItem = ({ id, title, content, cta, image_cap, image_url, social_links =
 
                 <div className={styles.arrowControls}>
 
-                    <button disabled={isLeftDisabled} onClick={() => handleArrowNavigate('left')}>
+                    <button aria-label="Go to previous slide" disabled={isLeftDisabled} onClick={() => handleArrowNavigate('left')}>
                         <LeftIcon />
                     </button>
 
-                    <button disabled={isRightDisabled} onClick={() => handleArrowNavigate('right')}>
+                    <button aria-label="Go to next slide" disabled={isRightDisabled} onClick={() => handleArrowNavigate('right')}>
                         <RightIcon />
                     </button>
 
