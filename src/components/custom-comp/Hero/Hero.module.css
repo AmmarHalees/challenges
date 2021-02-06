@@ -2,12 +2,10 @@
 
     display: grid;
     align-items: center;
-    /* justify-content: center; */
 
-    background: green;
     height: 100vh;
     position: relative;
-    top: calc(0rem - var(--header-height));
+    top: calc(0rem - var(--header-height)/2);
     width: 100%;
 
     background-image:  url("../../../assets//images/hero.png");
@@ -28,9 +26,10 @@
 
 .Hero h1{
 
-    font-size: 120px;
+    font-size: 60px;
     font-weight: normal;
     font-family: 'Noe-display';
+    margin-top: calc(var(--header-height)/2);
 }
 
 .Hero h2{
@@ -87,4 +86,19 @@
   transform: rotate(270deg);
   font-weight: bold;
     letter-spacing: 1px;
+}
+
+
+@media all and (min-width: 768px) {
+    .Hero h1{
+
+        font-size: 120px;
+        margin-top: 0px;
+
+    }
+    .Hero {
+
+        top: calc(0rem - var(--header-height));
+  
+    }
 }

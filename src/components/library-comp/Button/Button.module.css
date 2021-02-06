@@ -13,10 +13,9 @@
     box-sizing: border-box;
 
     box-shadow: 5px 15px 40px rgba(0, 201, 224, 0.2);
-    padding: 1rem 3rem;
     border-radius: 2rem;
-
-
+    padding: 0.7rem 2rem;
+    margin: auto;
 }
 
 /*----Interactions----*/
@@ -107,5 +106,19 @@
 .link:hover {
 
     background: rgba(172, 172, 172, 0.24);
+
+}
+
+
+
+
+
+@media all and (min-width: 768px) {
+
+    .Button {    
+        padding: 1rem 3rem;
+        margin: initial;
+
+    }
 
 }

@@ -6,7 +6,7 @@
 
 .Gallery h2 {
 
-    font-size: 72px;
+    font-size: 30px;
     font-family: 'Noe-display';
 
 }
@@ -14,9 +14,9 @@
 .header {
 
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
 
 
 }
@@ -27,5 +27,29 @@
     max-width: 1080px;
 
     display: grid;
-    gap: 4rem;
+    gap: 2rem;
+}
+
+
+@media all and (min-width: 768px) {
+
+    .Gallery h2 {
+
+        font-size: 72px;
+
+    }
+
+    .header {
+
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 2rem;
+
+
+    }
+
+    .innerGallery {
+        gap: 4rem;
+    }
+
 }

@@ -8,7 +8,7 @@ import { ReactComponent as FacebookLogo } from '../../../assets/icons/facebook.s
 import { ReactComponent as IGLogo } from '../../../assets/icons/instagram.svg';
 import DotsImageSRC from '../../../assets/images/dots.svg';
 
-const TabItem = ({ id, title, content, cta, image_cap, image_url, social_links={}, handleArrowNavigate, navControlObject: { left: isLeftDisabled, right: isRightDisabled } }) => {
+const TabItem = ({ id, title, content, cta, image_cap, image_url, social_links = {}, handleArrowNavigate, navControlObject: { left: isLeftDisabled, right: isRightDisabled } }) => {
 
 
     return (
@@ -26,7 +26,7 @@ const TabItem = ({ id, title, content, cta, image_cap, image_url, social_links={
 
 
                 </div>
-                    <img className={styles.dots} alt="dots pattern" src={DotsImageSRC}/>
+                <img className={styles.dots} alt="dots pattern" src={DotsImageSRC} />
 
                 <div className={styles.arrowControls}>
 
@@ -48,11 +48,6 @@ const TabItem = ({ id, title, content, cta, image_cap, image_url, social_links={
 
                 <h3>{title}</h3>
 
-                <p>{content}</p>
-
-                <Button type="primary" size="large" >{cta}</Button>
-
-
                 <div className={`${styles.SocialIconsCotainer}`}>
 
 
@@ -72,6 +67,13 @@ const TabItem = ({ id, title, content, cta, image_cap, image_url, social_links={
 
 
                 </div>
+
+                <p>{content}</p>
+
+                <Button type="primary" size="large" >{cta}</Button>
+
+
+
 
             </div>
 

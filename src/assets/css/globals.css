@@ -125,6 +125,8 @@ p,
 button {
     margin: 0px;
     padding: 0px;
+    font-family: var(--font-family, sans-serif, Arial, Helvetica);
+
 }
 
 ul {
