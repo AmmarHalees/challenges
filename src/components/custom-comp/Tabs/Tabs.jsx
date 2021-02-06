@@ -1,10 +1,17 @@
-import React, { useEffect, useState } from 'react';
+import React, {useState } from 'react';
 import TabItem from '../TabItem/TabItem';
 import styles from './Tabs.module.css';
+import useHandleTabSelect from './useHandleTabSelect';
 
 
-const Tabs = ({ TabsData  }) => {
+const Tabs = ({ TabsData }) => {
 
+    const [navControlObject , setnavControlObject] = useState({
+
+        left: true,
+        right:true
+
+    });
 
     const [selectedTab, setSelectedTabIndex] = useState("1");
 
@@ -14,13 +21,57 @@ const Tabs = ({ TabsData  }) => {
 
     }
 
-    const [selectedTabContent, setSelectedTabContent] = useState({});
+    const [selectedTabContent, setSelectedTabContent]  = useHandleTabSelect(TabsData , selectedTab , setnavControlObject)
 
-    useEffect(() => {
+    function handleArrowNavigate(direction) {
 
-        setSelectedTabContent(TabsData.find(x => x.id === selectedTab))
+        const indexOfCurrentlySelected = TabsData.findIndex(x => x.id === selectedTab)
 
-    }, [selectedTab, TabsData]);
+        const isAllowedToNavigateLeft = indexOfCurrentlySelected > 0;
+        const isAllowedToNavigateRight = indexOfCurrentlySelected < TabsData.length - 1;
+
+
+        switch (direction) {
+
+            case 'left': {
+
+                if (isAllowedToNavigateLeft) {
+
+                    setSelectedTabIndex(`${Number(selectedTab) - 1}`);
+
+                } else {
+
+                    return
+
+                }
+
+                break;
+
+            }
+            case 'right': {
+
+                if (isAllowedToNavigateRight) {
+
+                    setSelectedTabIndex(`${Number(selectedTab) + 1}`);
+
+                } else {
+
+                    return
+
+                }
+                break;
+
+            }
+
+            default: return;
+
+        }
+
+
+
+
+    }
+
 
     const { id, title, content, cta, image_cap, image_url, social_links } = selectedTabContent;
 
@@ -45,7 +96,7 @@ const Tabs = ({ TabsData  }) => {
 
             <div className={styles.tabsContainer}>
 
-                <TabItem title={title} id={id} content={content} image_cap={image_cap} image_url={image_url} social_links={social_links} cta = {cta} />
+                <TabItem navControlObject={navControlObject} title={title} handleArrowNavigate={handleArrowNavigate} id={id} content={content} image_cap={image_cap} image_url={image_url} social_links={social_links} cta={cta} />
 
             </div>
 
@@ -55,53 +106,3 @@ const Tabs = ({ TabsData  }) => {
 }
 
 export default Tabs;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function renderTabContent(selected) {
-
-//     switch (selected) {
-
-//         case 'Basic': return <Basic />;
-
-//         case 'Security': return <Security />;
-
-//         case 'Notifications': return <Notifications />;
-
-
-//         default: return <div>Nothing</div>
-//     }
-
-// }
-
-
-//     const Tabs = ({ selected }) => {
-
-//         return (
-
-//             <div style={{ padding: '0rem  1rem 1rem 1rem' }}>
-
-//                 {renderTabContent(selected)}
-
-//             </div>
-
-
-//         )
-//     }
-
-// export default Tabs;

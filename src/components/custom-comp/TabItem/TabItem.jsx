@@ -1,8 +1,11 @@
 import React from 'react';
 import styles from './TabItem.module.css';
 import Button from '../../library-comp/Button/Button';
+import { ReactComponent as LeftIcon } from '../../../assets/icons/arrow-left.svg';
+import { ReactComponent as RightIcon } from '../../../assets/icons/arrow-right.svg';
 
-const TabItem = ({ id, title, content, cta, image_cap, image_url, social_links }) => {
+const TabItem = ({ id, title, content, cta, image_cap, image_url, social_links , handleArrowNavigate ,navControlObject:{left:isLeftDisabled,right:isRightDisabled}}) => {
+        
     return (
 
         <div className={styles.container}>
@@ -15,6 +18,19 @@ const TabItem = ({ id, title, content, cta, image_cap, image_url, social_links }
                     <div className={styles.line}></div>
                     <p className={styles.number}>{`0${id}.`}</p>
                     <h4>{image_cap}</h4>
+
+
+                </div>
+
+                <div className={styles.arrowControls}>
+
+                    <button disabled ={isLeftDisabled} onClick={()=>handleArrowNavigate('left')}>
+                        <LeftIcon />
+                    </button>
+
+                    <button disabled={isRightDisabled} onClick={()=>handleArrowNavigate('right')}>
+                        <RightIcon />
+                    </button>
 
                 </div>
 

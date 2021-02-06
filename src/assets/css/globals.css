@@ -142,6 +142,11 @@ a:hover {
     color: var(--primary-color);
 }
 
+button{
+    background: none;
+    color: white;
+
+}
 
 h1,
 h2,

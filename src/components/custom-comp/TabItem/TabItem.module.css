@@ -32,14 +32,14 @@
     width: 100%;
     object-fit: cover;
     margin: auto;
-    border-radius: 1rem;
+    border-radius: 8px;
 }
 
 .floating{
 
     position: absolute;
     border: 0px;
-    bottom: 75px;
+    top: 200px;
     text-align: left;
     font-size: 24px;
     left: -93px;
@@ -59,4 +59,44 @@
 .number{
 
     margin-bottom: 1rem;
+}
+
+.arrowControls{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+    bottom: 5px;
+    right: -1px;
+    background: #011627;
+    border-radius: 8px 0px 8px 0px;
+}
+
+.arrowControls button{
+
+    padding: 1rem;
+
+}
+
+.arrowControls button:first-child{
+
+    border-radius: 8px 0rem 0rem;
+
+}
+
+
+.arrowControls button:nth-child(2){
+
+    border-radius: 0rem 0rem 8px 0rem;
+
+}
+
+.arrowControls button[disabled]{
+
+    cursor: not-allowed;
+    pointer-events: none;
+    box-shadow: none;
+
+    opacity: 0.3;
+
 }
